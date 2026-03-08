@@ -1,4 +1,16 @@
 # Car Dealership Website
 
-A full-stack web application for browsing and purchasing vehicles online.
-Built with Node.js and Express for the backend, PostgreSQL with Knex for database management, and a responsive UI for browsing inventory, managing a shopping cart, and processing payments.
+Full-stack web application for listing, browsing, and purchasing vehicles online.
+
+## Tech Stack
+- Node.js
+- Express.js
+- PostgreSQL
+- Knex.js
+- HTML / CSS / JavaScript
+
+## Features
+- Browse available vehicles
+- Shopping cart functionality
+- Payment processing
+- Responsive UI for vehicle listings
