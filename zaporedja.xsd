@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="mojeZaporedje" xmlns="mojeZaporedje" elementFormDefault="qualified">
+
+	<xs:element name="seznamAvtomobilov">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="produkt" maxOccurs="100">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="izdelek"/>
+							<xs:element name="opis"/>
+							<xs:element name="cena"/>
+							<xs:element name="kilometrov"/>
+							<xs:element name="popust"/>
+						</xs:sequence>
+						<xs:attribute name="id"></xs:attribute>
+						<xs:attribute name="src"></xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

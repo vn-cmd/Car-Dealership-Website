@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spletna trgovina</title>
+    <link rel="stylesheet" href="../stylesheets/racun.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/306d461829.js" crossorigin="anonymous"></script>
+</head>
+<h1 align="center"> Spletna trgovina "Ex-Yu"</h1>
+
+<p align="center" style="font-size: x-small;"><a href="login.html">LOGIN |</a> <a href="registracija.html">REGISTRACIJA</a></a></p>
+    <hr >
+    <nav class="navbar navbar-expand-sm">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Domov</a>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Modeli
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="modeli.html">Splošno</a></li>
+        <li><a href="podrobnosti.html#a1">Yugo GV Sport</a></li>
+        <li><a href="podrobnosti.html#a2">Zastava Yugo 45</a></li>
+        <li><a href="podrobnosti.html#a3">Yugo 55</a></li>
+        <li><a href="podrobnosti.html">Yugo Cabrio</a></li>
+        <li><a href="podrobnosti.html">Zastava Koral</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="podrobnosti.html"><i class="fas fa-asterisk"></i>Podrobnosti</a>
+      </li>
+      <li class="nav-item">
+      </li>
+    </ul>
+    </nav>
+  <hr />
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Naslov za plačilo</h4>
+      <form class="needs-validation was-validated" novalidate="" _lpchecked="1">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Ime</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Ime je obvezno.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Priimek</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Priimek je obvezen.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Email <span class="text-muted">(Neobvezno)</span></label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          <div class="invalid-feedback">
+            Prosimo, vnesite email.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address">Naslov</label>
+          <input type="text" class="form-control" id="address" placeholder="Iztokova ulica 22" required="">
+          <div class="invalid-feedback">
+            Vnesite svoj naslov.
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Država</label>
+            <select class="custom-select d-block w-100" id="country" required="">
+              <option value="">Odberi...</option>
+              <option>Slovenia</option>
+              <option>Macedonia</option>
+              <option>Serbia</option>
+              <option>Germany</option>
+            </select>
+            <div class="invalid-feedback">
+              Prosimo, vnesite svoju državo.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">Mesto</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required="">
+            <div class="invalid-feedback">
+              Prosimo, vnesite svojo mesto.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="zip">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required="">
+            <div class="invalid-feedback">
+              Zip kod je obvezen.
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="save-info">
+          <label class="custom-control-label" for="save-info">Te podatke shranite za naslednjič.</label>
+        </div>
+        <hr class="mb-4">
+
+        <h4 class="mb-3">Plačilo</h4>
+
+        <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+            <label class="custom-control-label" for="credit">Credit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+            <label class="custom-control-label" for="debit">Debit card</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cc-name">Ime na kartici</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+            <small class="text-muted">Celotno ime, kot je prikazano na kartici</small>
+            <div class="invalid-feedback">
+              Ime je obvezno.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cc-number">Številka kreditne kartice</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+            <div class="invalid-feedback">
+              Številka kreditne kartice je obvezna.
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="cc-expiration">Datum veljavnost</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+            <div class="invalid-feedback">
+              Datum veljavnost je obvezen.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-expiration">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+            <div class="invalid-feedback">
+              CVV je obvezno.
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Pošlji</button>
+      </form>
+    </div>
+    <div class="col-25">
+      <div class="container">
+      </div>
+    </div>
+  </div>
+</html>

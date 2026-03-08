@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spletna trgovina</title>
+    <link rel="stylesheet" href="../stylesheets/mystyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/306d461829.js" crossorigin="anonymous"></script>
+    <style>
+        .container{
+	width: 40%;
+	text-align: center;
+}
+input{
+	display: block;
+	margin: 5px auto;
+	padding-left: 4px;
+	padding-right: 4px;
+	width: 80%;
+}
+#enter, #enternew{
+	margin: 10px;
+}
+label{
+	display: block;
+	text-align: left;
+	margin-left: 10%;
+	font-size: 12px;
+}
+    </style>
+<script>
+    $(document).ready(function(){
+        var email,pass;
+        $("#submit").click(function(){
+            email=$("#email").val();
+            pass=$("#password").val();
+            /*
+            * Perform some validation here.
+            */
+            $.post("/login",{email:email,pass:pass},function(data){
+                if(data==='done') {
+                    window.location.href="/admin";
+                }
+            });
+        });
+    });
+</script>
+</head>
+<body>
+<input type="text" size="40" placeholder="Type your email" id="email"><br />
+<input type="password" size="40" placeholder="Type your password" id="password"><br />
+<input type="button" value="Submit" id="submit">
+<!--<div class="container">
+    <h1>Prijava uporabnika</h1>
+    <input type="text" id="un" placeholder="Username"></input>
+    <input type="password" id="pw" placeholder="Password"></input>
+    <button class="btn" id="enter">Enter</button>
+</div>
+<script src="login.js"></script>-->
+</body>
+</html>

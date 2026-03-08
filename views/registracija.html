@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spletna trgovina</title>
+    <link rel="stylesheet" href="../stylesheets/mystyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/306d461829.js" crossorigin="anonymous"></script>
+</head>
+<h1 align="center"> Spletna trgovina "Ex-Yu"</h1>
+
+<p align="center" style="font-size: x-small;"><a href="login.html">LOGIN |</a> <a href="registracija.html">REGISTRACIJA</a></a></p>
+    <hr >
+    <nav class="navbar navbar-expand-sm">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Domov</a>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Modeli
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="modeli.html">Splošno</a></li>
+        <li><a href="podrobnosti.html#a1">Yugo GV Sport</a></li>
+        <li><a href="podrobnosti.html#a2">Zastava Yugo 45</a></li>
+        <li><a href="podrobnosti.html#a3">Yugo 55</a></li>
+        <li><a href="podrobnosti.html">Yugo Cabrio</a></li>
+        <li><a href="podrobnosti.html">Zastava Koral</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="podrobnosti.html"><i class="fas fa-asterisk"></i>Podrobnosti</a>
+      </li>
+      <li class="nav-item">
+      </li>
+    </ul>
+    </nav>
+  <hr/>
+    <h2>Registracija</h2>
+    <form>
+        <div class="form-group row" style="width:25%">
+          <label for="inputName" class="col-sm-2 col-form-label">Ime</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputName" placeholder="Ime">
+          </div>
+        </div>
+        <p>
+  
+        </p>
+        <div class="form-group row" style="width:25%">
+          <label for="inputName" class="col-sm-2 col-form-label">Priimek</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputName" placeholder="Priimek">
+          </div>
+        </div> <p>
+          
+        </p>
+        <div class="form-group row" style="width:25%">
+          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+          </div>
+        </div>
+        <p>
+          
+        </p>
+        <div class="form-group row" style="width:25%">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Geslo</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputTel" placeholder="Geslo">
+          </div>
+        </div>
+        <p>
+          
+        </p>
+        <div class="form-group row" style="width:25%">
+          <label for="inputPhone" class="col-sm-2 col-form-label">Spol</label>
+          <div class="col-sm-10">
+            <input type="radio" name="spol" value="M" />Moški
+            <input type="radio" name="spol" value="Z" />Ženski 
+          </div>
+        </div>
+        <p>
+          
+        </p>
+        <div class="form-group row" style="width:25%">
+          <label for="inputCity" class="col-sm-2 col-form-label">Mesto</label>
+          <div class="col-sm-10">
+            <input list="Mesto" name="Kraj"><datalist id="Mesto"><option value="Severni del Makedonije"></option><option value="Južni del Makedonije"></option><option value="Vzhodni del Makedonije"></option><option value="Zahodni del Makedonije"></option></datalist><br>
+          </div>
+        </div>
+        <p>
+          
+        </p>
+        <p>
+          
+        </p>
+        <div class="row" style="width:50%">
+          <button type="submit" class="btn btn-primary col-10 col-md-2 m-2">Pošlji</button>
+          <button type="reset" class="btn btn-secondary col-10 col-md-2 m-2">Resetiraj</button>
+        </div>
+      </form>
+    <hr/>
+    <i>Kontakt: <a href="mailto:viktor.nankovski@student.um.si">viktor.nankovski@student.um.si</a></i>
+</body>
+
+</html>

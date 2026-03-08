@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spletna trgovina</title>
+    <link rel="stylesheet" href="../stylesheets/mystyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/306d461829.js" crossorigin="anonymous"></script>
+</head>
+<h1 align="center"> Spletna trgovina "Ex-Yu"</h1>
+
+<p align="center" style="font-size: x-small;"><a href="login.html">LOGIN |</a> <a href="registracija.html">REGISTRACIJA</a></a></p>
+    <hr >
+    <nav class="navbar navbar-expand-sm">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Domov</a>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Modeli
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="modeli.html">Splošno</a></li>
+        <li><a href="podrobnosti.html#a1">Yugo GV Sport</a></li>
+        <li><a href="podrobnosti.html#a2">Zastava Yugo 45</a></li>
+        <li><a href="podrobnosti.html#a3">Yugo 55</a></li>
+        <li><a href="podrobnosti.html">Yugo Cabrio</a></li>
+        <li><a href="podrobnosti.html">Zastava Koral</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="podrobnosti.html"><i class="fas fa-asterisk"></i>Podrobnosti</a>
+      </li>
+      <li class="nav-item">
+      </li>
+    </ul>
+    </nav>
+  <hr />
+    <div class="vnos"> 
+        <table>
+    
+            <tr>
+            <tr> </tr>
+            <td>
+               <b>Rabljen</b> 
+            </td>
+            <td>
+                <input type="radio" name="Rabljen" value="Rabljen" required />
+            </td>
+            <td>
+    <b>Nov</b>
+            </td>
+            <td>
+                <input type="radio" name="Nov" value="Nov" />
+            </td>
+            <tr></tr>
+                <td>
+                  <b>  Model avtobomila</b>
+                </td>
+                <td>
+                    <input type="text" name="Model" required/>
+                </td>
+            <tr>
+                <td>
+                   <b>Kilometri </b>
+                </td>
+                <td>
+                    <input type="text" name="Kilometri" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Cijena </b>
+                </td>
+                <td>
+                    <input type="text" name="Cijena" size="5" maxlength="5" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Opis</b>
+                </td>
+                <td>
+                    <input type="text" name="Opis" size="50" maxlength="30" required/>
+                 </td>
+            <tr>
+                <td>
+                    <b>Vnesi Sliku </b>
+                </td>
+                <td>
+                    
+                    <input type="file" id="myfile" name="slika">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button> </p><a href="index.html">OK</a></button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</html>

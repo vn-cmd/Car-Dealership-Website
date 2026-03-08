@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seznamAvtomobile>
+
+<model id="1" src="yugo_sport.jpg">
+    <naziv>Avtomobil Yugo GV Sport</naziv>
+    <opis>Eden od najboljših proizvedenih modelov Yugo</opis>
+    <cena>2000$</cena>
+    <kilometrov>50000</kilometrov>
+    <popust>0</popust>
+</model>
+<model id="2" src="yugo_45.jpg">
+    <naziv>Avtomobil Zastava Yugo 45</naziv>
+    <opisYugo 45 je bil eden najbolj prodajnih avtomobilov v Jugoslaviji. Izdelovali so ga med leti 1980 in 2008 v tovarni Crvena Zvezda. Zasnoval ga je Giorgetto Giugiaro. Vozilu so večkrat spremenili ime, vendar je vsem navdušencem ostal v spominu pod imenom Yugo.</opis>
+    <cena>1800$</cena>
+    <kilometrov>110000</kilometrov>
+    <popust>0</popust>
+</model>
+<model id="3" src="yugo_55.jpg">
+    <naziv>Avtomobil Yugo 55</naziv>
+    <opis>Široko uporabljen Yugo model</opis>
+    <cena>1400$</cena>
+    <kilometrov>150000</kilometrov>
+    <popust>0</popust>
+</model>
+<model id="4" src="yugo_cabrio.jpg">
+    <naziv>Avtomobil Yugo Cabrio</naziv>
+    <opis>Redek Yugo model</opis>
+    <cena>3000$</cena>
+    <kilometrov>60000</kilometrov>
+    <popust>0</popust>
+</model>
+<model id="5" src="Yugo_Koral.jpg">
+    <naziv>Avtomobil Yugo Zastava Koral</naziv>
+    <opis>Pogosto uporabljen model</opis>
+    <cena>3000$</cena>
+    <kilometrov>55000</kilometrov>
+    <popust>10%</popust>
+</model>
+
+</seznamAvtomobile>
